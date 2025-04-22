@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercico de Formulários</title>
+  </head>
+  <body>
+    <h1>Candidatura</h1>
+
+    <form method="POST">
+      <!-- Input Primeiro e último nome -->
+      <label for="texto">Primeiro e ultimo nome</label>
+      <input
+        type="text"
+        id="texto"
+        name=""
+        placeholder="Insira aqui"
+        value=""
+      />
+
+      <br />
+      <br />
+
+      <!-- Input número de telemovel -->
+      <label for="telemovel">Numero de telemovel:</label>
+      <input
+        type="tel"
+        name="telephone"
+        required
+        id="telemovel"
+        placeholder="+351 XXXXXXXXX"
+      />
+
+      <br />
+      <br />
+
+      <!-- Input email -->
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+
+      <br />
+      <br />
+
+      <!-- Website/Linkedin -->
+      <label for="website">Website/Linkedin</label>
+      <input type="url" name="website" id="website" />
+
+      <br />
+      <br />
+
+      <!-- CV -->
+      <label for="ficheiro">Input de file</label>
+      <input type="file" name="file" id="ficheiro" />
+
+      <br />
+      <br />
+
+      <!-- Nome da última empresa onde trabalhou -->
+      <label for="texto">Nome da última empresa onde trabalhou</label>
+      <input
+        type="text"
+        id="texto"
+        name=""
+        placeholder="Insira aqui o nome"
+        value=""
+      />
+
+      <br />
+      <br />
+
+      <!-- Data do início do cargo -->
+      <label for="data">Data de início do cargo</label>
+      <input type="date" name="date" id="data" value="" />
+
+      <!-- Data do término do cargo -->
+      <label for="data">Data de término do cargo</label>
+      <input type="date" name="date" id="data" value="" />
+      <br />
+      <br />
+
+      <!-- Meses à casa -->
+      <label for="numeros">Quantos meses precisa de dar à casa</label>
+      <input type="number" id="numeros" name="numbers" min="0" max="12" />
+
+      <br />
+      <br />
+
+      <!-- textArea -->
+      <label for="mensagem">Cover Letter</label>
+      <textarea
+        id="mensagem"
+        name="message"
+        maxlength="200"
+        minlength="50"
+      ></textarea>
+
+      <br />
+      <br />
+
+      <!-- Select -->
+      <label for="plataforma">Onde ouviste falar de nós</label>
+      <select id="plataform" name="plataforma" required>
+        <option value="">--- Selecione uma</option>
+        <option value="google">Google</option>
+        <option value="amigos">Amigos</option>
+        <option value="linkedin">LinkedIn</option>
+      </select>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
