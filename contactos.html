@@ -10,12 +10,21 @@
 
     <form method="POST">
       <!-- Input Primeiro e último nome -->
-      <label for="texto">Primeiro e ultimo nome</label>
+      <label for="texto">Primeiro nome</label>
       <input
         type="text"
         id="texto"
         name=""
-        placeholder="Insira aqui"
+        placeholder="Primeiro nome"
+        value=""
+      />
+
+      <label for="texto">Último nome</label>
+      <input
+        type="text"
+        id="texto"
+        name=""
+        placeholder="Último nome"
         value=""
       />
 
@@ -23,7 +32,7 @@
       <br />
 
       <!-- Input número de telemovel -->
-      <label for="telemovel">Numero de telemovel:</label>
+      <label for="telemovel">Numero de telemovel</label>
       <input
         type="tel"
         name="telephone"
@@ -50,19 +59,19 @@
       <br />
 
       <!-- CV -->
-      <label for="ficheiro">Input de file</label>
+      <label for="ficheiro">Enviar ficheiro</label>
       <input type="file" name="file" id="ficheiro" />
 
       <br />
       <br />
 
       <!-- Nome da última empresa onde trabalhou -->
-      <label for="texto">Nome da última empresa onde trabalhou</label>
+      <label for="texto">Ultima Empresa</label>
       <input
         type="text"
         id="texto"
         name=""
-        placeholder="Insira aqui o nome"
+        placeholder="Nome da Empresa"
         value=""
       />
 
@@ -76,12 +85,20 @@
       <!-- Data do término do cargo -->
       <label for="data">Data de término do cargo</label>
       <input type="date" name="date" id="data" value="" />
+
       <br />
       <br />
 
       <!-- Meses à casa -->
       <label for="numeros">Quantos meses precisa de dar à casa</label>
-      <input type="number" id="numeros" name="numbers" min="0" max="12" />
+      <input
+        type="number"
+        id="numeros"
+        name="numbers"
+        min="0"
+        max="12"
+        placeholder="60"
+      />
 
       <br />
       <br />
